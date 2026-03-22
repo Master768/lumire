@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1805,7 +1805,7 @@
       border-radius: 14px;
       overflow: hidden;
       box-shadow: 0 30px 80px rgba(0, 0, 0, .7);
-      background: #0a0515
+      background: transparent !important
     }
 
     .book-page {
@@ -3337,14 +3337,46 @@
 
     // ─── FEATURE 5: CONSTELLATION
     var constData = [
-      { name: "Hype Machine", desc: "Believes in you louder than your doubts", x: 0.15, y: 0.18 },
-      { name: "Zero Judgement", desc: "100% yourself, always accepted", x: 0.45, y: 0.08 },
-      { name: "Joy Architect", desc: "Makes boring days the best days", x: 0.78, y: 0.20 },
-      { name: "Always Checks In", desc: "That 'hey, you okay?' hits different", x: 0.88, y: 0.52 },
-      { name: "Stayed Through It", desc: "Not just the good chapters. All of them.", x: 0.65, y: 0.78 },
-      { name: "Pure Heart", desc: "Kindness is just who you are", x: 0.35, y: 0.85 },
-      { name: "Role Model", desc: "Inspires everyone to be a better friend", x: 0.10, y: 0.68 },
-      { name: "Irreplaceable", desc: "Nobody — nobody — quite like you", x: 0.50, y: 0.50 }
+      {
+        name: "The Hand Talker",
+        desc: "Explains everything with her hands. Even on a call. Even when nobody can see her.",
+        x: 0.15, y: 0.18
+      },
+      {
+        name: "Competitive When Silent",
+        desc: "Looks quiet. Is calculating. Will go from last place to first and say nothing.",
+        x: 0.45, y: 0.08
+      },
+      {
+        name: "Stationery Hoarder",
+        desc: "Keychains. Notebooks. Pens she will never use. Happiness is a good stationery shop.",
+        x: 0.78, y: 0.20
+      },
+      {
+        name: "Apologises For Existing",
+        desc: "Shares her whole heart. Pauses. 'Sorry, ignore that.' No. We will not be ignoring that.",
+        x: 0.88, y: 0.52
+      },
+      {
+        name: "Sir Jii Energy",
+        desc: "Has a whole private language with exactly one person. Nobody else gets access.",
+        x: 0.65, y: 0.78
+      },
+      {
+        name: "Garden Girl",
+        desc: "Sits near plants to think. Loves growing things. Makes sense — she makes people grow too.",
+        x: 0.35, y: 0.85
+      },
+      {
+        name: "Mandala Brain",
+        desc: "Draws Mandala art to slow down a mind that never fully stops. It works. Barely.",
+        x: 0.10, y: 0.68
+      },
+      {
+        name: "Ultra Premium",
+        desc: "Gives everyone the standard version of herself. One person gets the full thing. Just one.Only me😁",
+        x: 0.50, y: 0.50
+      }
     ];
     var constLines = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 0], [0, 7], [2, 7], [4, 7], [6, 7]];
     var constBuilt = false;
