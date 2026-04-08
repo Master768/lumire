@@ -4050,6 +4050,24 @@
       }
       draw();
     })();
+    // Add this to your existing JS
+const hiddenInput = document.createElement('input');
+hiddenInput.setAttribute('type', 'text');
+hiddenInput.style.cssText = 'position:fixed;opacity:0;top:0;left:0;width:100%;height:100%;z-index:9999;';
+document.body.appendChild(hiddenInput);
+
+// Tap anywhere = focus it = mobile keyboard pops up
+document.addEventListener('click', () => hiddenInput.focus());
+hiddenInput.focus(); // auto-focus on load too
+
+hiddenInput.addEventListener('input', (e) => {
+  const val = hiddenInput.value;
+  val.split('').forEach(char => {
+    // dispatch a fake keydown event into your existing logic
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: char }));
+  });
+  hiddenInput.value = '';
+});
 
   </script>
 
