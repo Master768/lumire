@@ -1498,6 +1498,20 @@
       position: relative
     }
 
+    #s-song {
+      background: linear-gradient(180deg, #04020a, #07021a 50%, #04020a);
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 180px 24px 80px;
+      margin-top: 100px;
+      position: relative;
+      overflow: hidden
+    }
+
     .f-hearts {
       position: absolute;
       inset: 0;
@@ -2477,6 +2491,27 @@
     }
 
     @media(max-width:600px) {
+      section {
+        min-height: auto !important;
+        padding: 60px 20px !important
+      }
+
+      #s0,
+      #s-finale {
+        min-height: 85vh !important;
+        min-height: 85dvh !important
+      }
+
+      #s-song {
+        margin-top: 20px !important;
+        padding: 40px 20px !important;
+        min-height: auto !important
+      }
+
+      .sh {
+        margin-bottom: 25px
+      }
+
       .pol-stage {
         min-height: 600px
       }
@@ -3500,8 +3535,7 @@
   </section>
 
   <!-- ══ SONG SECTION ══ -->
-  <section id="s-song"
-    style="background:linear-gradient(180deg,#04020a,#07021a 50%,#04020a);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:180px 24px 80px;margin-top:100px;position:relative;overflow:hidden">
+  <section id="s-song">
     <div
       style="position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(201,184,240,.08),transparent 70%);pointer-events:none">
     </div>
